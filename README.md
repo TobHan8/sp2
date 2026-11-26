@@ -26,6 +26,42 @@ The exam period started 09.11.2026 and ends 14.12.2026 (5 weeks full-time). Stud
 - Playwright (e2e tests)
 - Web components (Custom Elements)
 
+## Getting started
+
+## Prerequisities
+
+## Running the project
+
+This is a fictional auction and profile platform for educational purposes. No real users or personal data should be tied to this project.
+
+### Generating API-key
+
+To run this project yourself, you will need an API-key from the Noroff API v2.0. This is how to generate one:
+
+1. Go to [API Key Tool from Version 2 (v2) of the Noroff API](https://docs.noroff.dev/docs/v2/auth/api-key#api-key-tool). You might have to scroll down to find the section.
+
+2. Register an account. This will not create a real Noroff school account, but an account that can only interact with the v2.0 API endpoints. Make sure you don't use any real information or passwords when registering an account. The email can be anything, as long as it ends with '@stud.noroff.no'. I like to just mash random keys when creating new accounts.
+
+Example of registration data:
+- Username: dwafafa
+- Email: dwafafa@stud.noroff.no
+- Password: 12345678
+
+3. Log in with the account to generate your key.
+
+### Using the API-Key
+
+1. Copy the .env.example file and paste it on the root level of the project (same level as .env.example). Rename the copied file to .env
+
+2. Paste your newly generated API-key behind the variable: VITE_NOROFF_API_KEY=Paste-Your-API-Key-Here
+
+3. If Vite is already running you will need to restart the server before the API_Key can be read. Close the terminal running the Vite server and open a new terminal. You can also press CTRL + C. Then run this command to start the server again: 
+```bash
+npm run dev
+``` 
+
+
+
 ## Assignment brief
 
 <details>
