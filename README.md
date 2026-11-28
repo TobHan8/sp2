@@ -30,6 +30,13 @@ The exam period started 09.11.2026 and ends 14.12.2026 (5 weeks full-time). Stud
 
 ## Prerequisities
 
+- Code editor
+- Node.js (requires Node ^22.12 || ^24 || >=26). This project is developed with Node v26.13.1. Check your version by running:
+```bash
+node -v
+``` 
+
+
 ## Running the project
 
 This is a fictional auction and profile platform for educational purposes. No real users or personal data should be tied to this project.
@@ -59,6 +66,60 @@ Example of registration data:
 ```bash
 npm run dev
 ``` 
+
+## Scripts
+
+Available scripts can be found and edited in package.json "scripts" block
+
+Start Vite and dev server. This will open a dev server on a local port. Open the link it prints in the terminal to view the site in the browser when developing. Changes are displayed automatically on save:
+```bash
+npm run dev
+```
+
+Run typecheck, bundle and compile files for production to dist/ folder:
+```bash
+npm run build
+```
+
+Serve production build from dist/ folder at http://localhost:4173/sp2/ (make sure you run npm run build first):
+```bash
+npm run preview
+``` 
+
+Run typecheck on all project files:
+```bash
+npm run typecheck
+``` 
+
+Run linting on all project files:
+```bash
+npm run lint
+``` 
+
+Run Prettier formatting on all project files:
+```bash
+npm run format
+``` 
+
+Run unit tests with Vitest:
+```bash
+npm run test:unit
+``` 
+
+Install browsers for e2e tests:
+```bash
+npx playwright install
+```
+
+Run end to end tests with Playwright in Chromium, Firefox and Webkit (requires browsers to be installed with npx playwright install):
+```bash
+npm run test:e2e
+``` 
+
+
+
+
+
 
 
 
